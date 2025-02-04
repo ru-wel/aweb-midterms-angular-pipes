@@ -61,10 +61,17 @@
 <p>{{ currentDate | date: 'MM/dd/yyyy' }}</p>
 <p>{{ currentDate | date: '' }}</p>
 <p>{{ currentDate | date: 'dd' }}</p>
+<!-- {{ currentDate | date:'shortDate' }}
+{{ currentDate | date:'fullDate' }}
+{{ currentDate | date:'MM/dd/yyyy' }}
+{{ currentDate | date:'shortTime' }}
+{{ currentDate | date:'d' }}
+{{ currentDate | date:'w' }} -->
 <br>
 <h2>Currency Pipes</h2>
 <p>{{ price | currency: 'USD' : 'symbol' : '1.2-2' }}</p>
 <p>{{ price | currency: 'USD' : 'code' }}</p>
+<!-- {{ price | currency:'USD':'code':'1.2-2' }} -->
 <p>{{ price | currency: 'INR' : 'symbol' : '1.2-2' }}</p>
 <p>{{ price | currency: 'GBP' : 'symbol' : '1.2-2' }}</p>
 <br>
