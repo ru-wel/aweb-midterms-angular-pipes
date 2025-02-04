@@ -16,6 +16,7 @@ import { NewCmpComponent } from './new-cmp/new-cmp.component';
 export class AppComponent implements OnInit{
   title = 'ng-pipes-demo';
   presentDate = new Date();
+  currentDate = new Date();
   time$ = interval(1000).pipe(
     map(() => new Date()) 
   )
